@@ -457,6 +457,21 @@ header {
   color: var(--first-color-alt);
 }
 
+.tiny__button {
+  display: inline-block;
+  background-color: var(--first-color-second);
+  color: #787878;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+  margin-top: 20%;
+}
+
+.tiny__button:hover {
+  background-color: var(--container-color);
+}
+
 /*==================== ABOUT ====================*/
 
 .about__img {
@@ -580,7 +595,6 @@ header {
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: var(--first-color);
   border-radius: 50%;
 }
 
@@ -836,6 +850,15 @@ header {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+.contact__element {
+  padding: 0.5rem 1rem 0.25rem;
+}
+.contact__element:hover {
+  background-color: var(--first-color-second);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem 0.25rem;
 }
 
 /*==================== FOOTER ====================*/
@@ -1190,4 +1213,35 @@ header {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__row {
+  gap: 4rem; /* Add space between the elements */
+}
+
+.contact__information {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Add space between the icon and the text */
+}
+
+.contact__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
 }

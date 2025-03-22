@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <title>Gaston Krabansky | Portfolio</title>
+
     <meta
       name="description"
       content="Portfolio de Gaston Krabansky. Expérience professionnelle,
       compétences, détails des projets et coordonnées."
     />
-    <title>Gaston Krabansky | Portfolio</title>
+    <meta name="keywords" content="Gaston Krabansky, Krabansky, Sniper_TVmc, SniperTVmc, skill" />
 
     <!--==================== OPEN GRAPH META TAGS ===================== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gaston.krabansky.fr/" />
     <meta property="og:title" content="Gaston Krabansky | Portfolio" />
     <meta property="og:image" content="/assets/img/PwaImages/ios/512.png" />
     <meta
@@ -20,6 +27,8 @@
     />
 
     <!--==================== TWITTER META TAGS ===================== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://gaston.krabansky.fr/" />
     <meta name="twitter:title" content="Gaston Krabansky | Portfolio" />
     <meta
       name="twitter:description"
@@ -51,7 +60,7 @@
     <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/256.png" />
     <link rel="apple-touch-icon" href="/assets/img/PwaImages/ios/512.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#6E57E0" />
-    <meta name="theme-color" content="#241818" />
+    <meta name="theme-color" content="#271616" />
 
     <!-- ============FAVICONS============== -->
     <link
@@ -82,6 +91,9 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--==================== CUSTOM ICONS ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
 
   <body>
@@ -115,11 +127,11 @@
               </a>
             </li>
 
-<!--            <li class="nav__item">-->
-<!--              <a href="#services" class="nav__link noSelect">-->
-<!--                <i class="uil uil-briefcase-alt nav__icon"></i> Services-->
-<!--              </a>-->
-<!--            </li>-->
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link noSelect">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Parcours
+              </a>
+            </li>
 
             <li class="nav__item">
               <a href="#projects" class="nav__link noSelect">
@@ -129,21 +141,13 @@
 
             <li class="nav__item">
               <a href="#contact" class="nav__link noSelect">
-                <i class="uil uil-message nav__icon"></i> Me contacter
+                <i class="uil uil-message nav__icon"></i> Contact
               </a>
             </li>
           </ul>
           <i class="uil uil-times nav__close noSelect" id="nav-close"></i>
         </div>
 
-        <div class="nav__btns">
-          <!-- theme change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-          <div class="nav__toggle noSelect" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
       </nav>
     </header>
 
@@ -170,14 +174,7 @@
                 <i class="uil uil-github"></i>
               </a>
               <a
-                href="https://www.instagram.com/gaston.kbk/"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-instagram"></i>
-              </a>
-              <a
-                      href="mailto:snipertv59.pro@gmail.com"
+                      href="mailto:gaston.krabansky@gmail.com"
                       target="_blank"
                       class="home__social-icon"
               >
@@ -209,18 +206,18 @@
                   />
                   <image
                     class="home__blob-img"
-                    x="-20"
+                    x="-25"
+                    y="-35"
                     xlink:href="assets/img/photo01.png"
-                  ></image>
+                   ></image>
                 </g>
               </svg>
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Gaston Krabansky</h1>
-              <h3 class="home__subtitle">Lycéen</h3>
+              <h1 class="home__title">Gaston KRABANSKY</h1>
               <p class="home__description">
-                Bonjour ! Moi, c'est Gaston, j'ai 18 ans, et je suis passionné par la programmation.<br>
+                Salut ! Moi c'est Gaston, j'ai 18 ans, et je suis passionné par la programmation.<br>
                 Actuellement lycéen, je suis à la recherche d'une alternance en développement informatique pour la rentrée 2025.
               </p>
               <a href="#contact" class="button button--flex">
@@ -243,20 +240,20 @@
 
     <section class="about section" id="about">
       <h2 class="section__title">À propos de moi</h2>
-      <span class="section__subtitle">Ma présentation</span>
+      <span class="section__subtitle"></span>
 
       <div class="about__container container grid">
         <img src="assets/img/coding.jpg" alt="" class="about__image" />
 
         <div class="about__data">
           <p class="about__description">
-            Je suis lycéen en terminale, en section européenne (anglais).<br>
+            Je suis lycéen en terminale, en section européenne anglais.<br>
             Passionné par la programmation depuis près de cinq ans,
-            j’ai principalement développé mes compétences en programmation orientée objet,
-            notamment en Java, avec lequel je suis le plus à l’aise.
-            J'ai également des connaissances en Python et dans les langages du web.
-            Cependant, n'étant pas passionné par cette branche, je ne les ai pas approfondis.<br>
-            Par ailleurs, grâce à mes projets personnels, notamment mon serveur Minecraft,
+            j’ai principalement développé mes compétences en programmation orientée objet avec Python,
+            mais aussi Java, le langage avec lequel je suis le plus à l’aise.<br>
+            Cependant, n'étant pas attiré par le côté front-end,
+            je n'ai pas approfondi les langages du web (HTML / CSS / JavaScript).<br>
+            Par ailleurs, grâce à mes projets personnels et notamment mon serveur Minecraft,
             j’ai acquis des compétences en administration système sous Linux.
             J’ai ainsi appris à gérer un site web avec Apache, une base de données avec MariaDB,
             un serveur mail avec Poste.io, un serveur Minecraft avec Spigot,
@@ -296,7 +293,7 @@
           <div class="about__buttons">
             <a
               download=""
-              href="assets/pdf/animesh-rawat-resume.pdf"
+              href="assets/pdf/cv_alternance_conception_de_logiciels.pdf"
               class="button button--flex"
             >
               Télécharger mon CV<i class="uil uil-download-alt button__icon"></i
@@ -310,7 +307,7 @@
 
     <section class="skills section" id="skills">
       <h2 class="section__title">Compétences</h2>
-      <span class="section__subtitle">Langages et technologies que j'utilise</span>
+        <span class="section__subtitle"></span>
       <div class="skills__container container grid">
 
         <div class="skills__container-box">
@@ -319,7 +316,15 @@
             src="/assets/img/skills/java.svg"
             alt="Java"
           />
-          <div class="skills__container-name">Java</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://www.java.com/fr/"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              Java
+            </a>
+          </div>
         </div>
 
         <div class="skills__container-box">
@@ -328,7 +333,15 @@
                   src="/assets/img/skills/python.svg"
                   alt="Python"
           />
-          <div class="skills__container-name">Python</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://www.python.org/"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              Python
+            </a>
+          </div>
         </div>
 
         <div class="skills__container-box">
@@ -337,7 +350,15 @@
                   src="/assets/img/skills/sql.svg"
                   alt="SQL"
           />
-          <div class="skills__container-name">SQL</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://mariadb.org/"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              SQL
+            </a>
+          </div>
         </div>
 
         <div class="skills__container-box">
@@ -346,7 +367,15 @@
                   src="/assets/img/skills/spigot.png"
                   alt="Spigot"
           />
-          <div class="skills__container-name">Spigot / Bukkit</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://www.spigotmc.org"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              Spigot / Bukkit
+            </a>
+          </div>
         </div>
 
         <div class="skills__container-box">
@@ -355,7 +384,15 @@
                   src="/assets/img/skills/linux.svg"
                   alt="Linux"
           />
-          <div class="skills__container-name">Linux (Debian)</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://www.debian.org/index.fr.html"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              Linux (Debian)
+            </a>
+          </div>
         </div>
 
         <div class="skills__container-box">
@@ -364,7 +401,15 @@
                   src="/assets/img/skills/apache.svg"
                   alt="Apache"
           />
-          <div class="skills__container-name">Apache</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://httpd.apache.org/"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              Apache
+            </a>
+          </div>
         </div>
 
         <div class="skills__container-box">
@@ -373,7 +418,15 @@
                   src="/assets/img/skills/github.svg"
                   alt="Git, GitHub, Copilot"
           />
-          <div class="skills__container-name">Git, GitHub, Copilot</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://github.com/"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              Git, GitHub, Copilot
+            </a>
+          </div>
         </div>
 
         <div class="skills__container-box">
@@ -382,7 +435,15 @@
                   src="/assets/img/skills/jetbrains.svg"
                   alt="JetBrains EDIs"
           />
-          <div class="skills__container-name">JetBrains IDEs</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://www.jetbrains.com/"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              JetBrains EDIs
+            </a>
+          </div>
         </div>
 
         <div class="skills__container-box">
@@ -391,7 +452,15 @@
                   src="/assets/img/skills/chatgpt.svg"
                   alt="ChatGPT"
           />
-          <div class="skills__container-name">ChatGPT</div>
+          <div class="skills__container-name">
+            <a
+                    href="https://chatgpt.com/"
+                    target="_blank"
+                    class="tiny__button button--flex"
+            >
+              ChatGPT
+            </a>
+          </div>
         </div>
 
       </div>
@@ -399,9 +468,9 @@
 
     <!--==================== QUALIFICATOIN ====================-->
 
-    <section class="qualification section">
-      <h2 class="section__title">Qualification</h2>
-      <span class="section__subtitle">Mon parcours personnel</span>
+    <section class="qualification section" id="qualification">
+      <h2 class="section__title">Parcours</h2>
+        <span class="section__subtitle"></span>
 
       <div class="qualification__container container">
         <div class="qualification__tabs">
@@ -417,7 +486,7 @@
             data-target="#education"
           >
             <i class="uil uil-graduation-cap qualification__icon"> </i>
-            Études
+            Scolaire
           </div>
         </div>
 
@@ -431,34 +500,34 @@
             <!--==================== QUALIFICATOIN 1====================-->
             <div class="qualification__data">
               <div>
+                <h3 class="qualification__title">Stage d'observation</h3>
+                <span class="qualification__subtitle"> Administration réseau & Programmation<br>(France 3) </span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i> Décembre 2021
+                </div>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-angles-down qualification__rounder" style="color: #E05757"></i>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATOIN 2====================-->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <i class="fa-solid fa-angles-down qualification__rounder" style="color: #E05757"></i>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
                 <h3 class="qualification__title">En recherche d'alternance</h3>
                 <span class="qualification__subtitle"> Développement Informatique </span>
                 <div class="qualification__calender">
                   <i class="uil uil-calendar-alt"></i> Rentrée 2025
                 </div>
               </div>
-
-              <div>
-                <span class="qualification__rounder"></span>
-                <span class="qualification__line"></span>
-              </div>
             </div>
-
-<!--            &lt;!&ndash;==================== QUALIFICATOIN 2====================&ndash;&gt;-->
-<!--            <div class="qualification__data">-->
-<!--              <div></div>-->
-<!--              <div>-->
-<!--                <span class="qualification__rounder"></span>-->
-<!--                <span class="qualification__line"></span>-->
-<!--              </div>-->
-<!--              <div>-->
-<!--                <h3 class="qualification__title">Frontend Developer</h3>-->
-<!--                <span class="qualification__subtitle"> Mobikasa </span>-->
-<!--                <div class="qualification__calender">-->
-<!--                  <i class="uil uil-calendar-alt"></i> 2018-2019-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
 
 <!--            &lt;!&ndash;==================== QUALIFICATOIN 3====================&ndash;&gt;-->
 <!--            <div class="qualification__data">-->
@@ -511,7 +580,7 @@
               </div>
 
               <div>
-                <span class="qualification__rounder"></span>
+                <i class="fa-solid fa-angles-down qualification__rounder" style="color: #E05757"></i>
                 <span class="qualification__line"></span>
               </div>
             </div>
@@ -520,7 +589,7 @@
             <div class="qualification__data">
               <div></div>
               <div>
-                <span class="qualification__rounder"></span>
+                <i class="fa-solid fa-angles-down qualification__rounder" style="color: #E05757"></i>
                 <!-- <span class="qualification__line"></span> -->
               </div>
               <div>
@@ -632,7 +701,7 @@
 
     <section class="portfolio section" id="projects">
       <h2 class="section__title">Projets</h2>
-      <span class="section__subtitle">Projets les plus récents</span>
+      <span class="section__subtitle"></span>
 
       <div class="portfolio__container container swiper-container">
         <div class="swiper-wrapper">
@@ -774,77 +843,42 @@
     <!--==================== CONTACT ME ====================-->
 
     <section class="contact section" id="contact">
-      <h2 class="section__title">Me contacter</h2>
-      <span class="section__subtitle">Prendre contact</span>
+      <h2 class="section__title">Contact</h2>
+        <span class="section__subtitle"></span>
 
       <div class="contact__container container grid">
-        <div>
-          <div class="contact__information">
-            <i class="uil uil-linkedin contact__icon"></i>
+        <div class="contact__row">
 
-            <div>
-              <h3 class="contact__title">LinkedIn</h3>
-              <span class="contact__subtitle">gaston-krabansky</span>
+          <a href="https://www.linkedin.com/in/gaston-krabansky/" target="_blank">
+            <div class="contact__information contact__element">
+              <i class="uil uil-linkedin contact__icon"></i>
+              <div>
+                <h3 class="contact__title">LinkedIn</h3>
+                <span class="contact__subtitle">gaston-krabansky</span>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="contact__information">
-            <i class="uil uil-envelope contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Email</h3>
-              <span class="contact__subtitle">snipertv59.pro@gmail.com</span>
+          <a href="https://discord.com/users/478908622102069251" target="_blank">
+            <div class="contact__information contact__element">
+              <i class="uil uil-discord contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Discord</h3>
+                <span class="contact__subtitle">@sniper_tvmc</span>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="contact__information">
-            <i class="uil uil-map-marker contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Localisation</h3>
-              <span class="contact__subtitle">Lille, France</span>
+          <a href="mailto:gaston.krabansky@gmail.com" target="_blank">
+            <div class="contact__information contact__element">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">gaston.krabansky@gmail.com</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-
-        <form action="send_mail.php" method="POST" class="contact__form grid">
-          <div class="contact__inputs grid">
-            <div class="contact__content">
-              <label class="contact__label">Nom</label>
-              <label>
-                <input type="text" name="name" class="contact__input" required />
-              </label>
-            </div>
-
-            <div class="contact__content">
-              <label class="contact__label">Email</label>
-              <label>
-                <input type="email" name="email" class="contact__input" required />
-              </label>
-            </div>
-          </div>
-
-          <div class="contact__content">
-            <label class="contact__label">Objet</label>
-            <label>
-              <input type="text" name="subject" class="contact__input" required />
-            </label>
-          </div>
-
-          <div class="contact__content">
-            <label class="contact__label">Message</label>
-            <label>
-              <textarea name="message" cols="0" rows="7" class="contact__input" required></textarea>
-            </label>
-          </div>
-
-          <div>
-            <button type="submit" class="button button--flex">
-              Envoyer un message
-              <i class="uil uil-message button__icon"></i>
-            </button>
-          </div>
-        </form>
       </div>
     </section>
 
@@ -854,8 +888,8 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h2 class="footer__title">Gaston Krabansky</h2>
-            <span class="footer__subtitle">Lycéen</span>
+            <h2 class="footer__title">Gaston KRABANSKY</h2>
+            <p>En recherche d'alternance pour la rentrée 2025.</p>
           </div>
 
           <ul class="footer__links">
@@ -889,11 +923,11 @@
             </a>
 
             <a
-               href="https://www.instagram.com/gaston.kbk/"
+               href="mailto:gaston.krabansky@gmail.com"
                target="_blank"
                class="footer__social"
             >
-              <i class="uil uil-instagram"></i>
+              <i class="uil uil-envelope"></i>
             </a>
 
           </div>

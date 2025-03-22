@@ -1,10 +1,10 @@
 {
-  "name": "Animesh Rawat - Portfolio",
-  "short_name": "Animesh Rawat",
+  "name": "Gaston Krabansky | Portfolio",
+  "short_name": "Gaston Krabansky",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#fff",
-  "theme_color": "#6E57E0",
+  "theme_color": "#271616",
   "orientation": "portrait-primary",
   "icons": [
     {
